@@ -1,0 +1,117 @@
+/**
+ * Einrichtungshaus Ostermann GmbH & Co. KG - Ostermann Theme
+ *
+ * @package   OstOstermannTheme
+ *
+ * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
+ * @copyright 2018 Einrichtungshaus Ostermann GmbH & Co. KG
+ * @license   proprietary
+ */
+
+
+
+
+
+
+
+@media screen and(min-width: @desktopViewportWidth) {
+
+
+    body.is--ctl-checkout.is--act-cart {
+
+        div.content div.product--table {
+
+            margin-top: 10px;
+
+
+            .alert {
+                margin-bottom: 10px;
+            }
+
+
+
+            div.table--actions {
+
+                padding-bottom: 0;
+                margin-bottom: 10px;
+
+                div.main--actions {
+                    background: #ffffff;
+                }
+            }
+
+            div.table--actions.actions--bottom {
+                div.main--actions {
+                    margin-top: 10px;
+                }
+            }
+
+
+
+            // product table
+            div.panel div.panel--body {
+                border: 0;
+                padding: 0;
+
+
+                div.table--header {
+                    padding: 10px 20px 0 20px;
+                }
+
+                div.table--tr {
+                    padding: 0 20px;
+                    border: 0;
+                }
+
+                form.table--add-product {
+                    width: 100%;
+                    padding: 10px 0;
+                    margin: 0;
+                    background: @color-background-gray;
+
+                    input.add-product--field {
+                        border-radius: 0;
+                        box-shadow: none;
+                        width: 20%;
+                        background: #ffffff;
+                    }
+
+                    button {
+                        width: 50px;
+                    }
+                }
+
+                div.basket--footer {
+                    width: 100%;
+                    margin: auto;
+                    border: none;
+                    display: grid;
+                    grid-template-columns: repeat( 2, 1fr );
+                    grid-gap: 10px;
+                    background-color: @color-background-gray;
+                    padding: 0;
+                    grid-row-gap: 0;
+
+
+
+                    > div, > ul {
+                        background-color: #ffffff;
+                        grid-column: span 1;
+                        padding: 10px;
+                        width: 100%;
+                        display: block;
+                    }
+
+                }
+            }
+
+
+        }
+
+    }
+}
+
+
+
+
+

@@ -1,0 +1,63 @@
+/**
+ * Einrichtungshaus Ostermann GmbH & Co. KG - Ostermann Theme
+ *
+ * @package   OstOstermannTheme
+ *
+ * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
+ * @copyright 2018 Einrichtungshaus Ostermann GmbH & Co. KG
+ * @license   proprietary
+ */
+
+
+
+
+
+
+@media screen and(min-width: @desktopViewportWidth) {
+
+
+    .listing--content {
+        padding-top: 0;
+    }
+
+
+
+    .listing--actions {
+        border: none;
+        background: #ffffff;
+        margin-bottom: 10px;
+        border-radius: 0;
+    }
+
+}
+
+
+
+
+
+// specific for manufacturer
+@media screen and(min-width: @desktopViewportWidth) {
+
+
+    body.is--ctl-listing.is--act-manufacturer {
+        section.content-main.container {
+            padding-top: 10px;
+
+            div.content {
+
+                // faulty margin for header panel
+                div.vendor--info.panel {
+                    margin-bottom: 10px;
+                }
+
+                // the sorting is empty on supplier page and we have to hide it
+                div.listing--wrapper {
+                    div.listing--actions.ost-listing-filter--sorting {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+}
