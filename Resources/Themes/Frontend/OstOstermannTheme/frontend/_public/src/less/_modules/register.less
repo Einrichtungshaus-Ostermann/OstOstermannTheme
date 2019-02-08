@@ -10,14 +10,62 @@
 
 
 
+@media screen and(min-width: @desktopViewportWidth) {
+
+
+    // container is not only within registration
+    div.steps--container.container {
+        max-width: 1180px;
+
+        div.steps--content {
+            border: 10px solid #e7eced;
+            border-bottom: 0;
+            margin-bottom: 0;
+            padding: 24px 0;
+
+            ul.steps--list li.steps--entry span.text {
+                width: 50%;
+            }
+        }
+    }
+
+
+
+}
+
+
+
 
 
 
 @media screen and(min-width: @desktopViewportWidth) {
 
 
-    .register--content {
-        width: ~"calc(66% - 10px)";
+    body.is--ctl-register.is--act-index {
+
+
+
+
+
+
+
+
+
+
+        .register--content {
+            width: ~"calc(66% - 10px)";
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+
+        .register--login {
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+
     }
+
+
+
 
 }

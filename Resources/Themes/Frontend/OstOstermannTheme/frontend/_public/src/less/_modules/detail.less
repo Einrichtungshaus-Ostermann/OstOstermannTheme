@@ -21,6 +21,18 @@ body.is--ctl-detail.is--act-index {
             }
         }
     }
+
+    // remove min height and padding
+    .similar--content,
+    .viewed--content,
+    .bought--content,
+    .related--content,
+    .product-streams--content {
+        .product-slider {
+            padding: 0;
+            min-height: auto;
+        }
+    }
 }
 
 
@@ -75,12 +87,10 @@ body.is--ctl-detail.is--act-index {
 
                             h1.product--title {
                                 width: 100%;
-                                font-size: 24px;
+                                font-size: @font-size-detail-title;
                                 font-weight: normal;
-                                color: @color-text-gray;
-                                letter-spacing: @huge-letter-spacing;
-
-
+                                color: @font-color-detail-title;
+                                letter-spacing: @font-letter-spacing-detail-title;
                             }
                         }
 
@@ -147,10 +157,10 @@ body.is--ctl-detail.is--act-index {
                                 // everything for the price
                                 div.product--price.price--default {
                                     span.price--content {
-                                        font-size: 38px;
-                                        color: @color-text-gray;
                                         font-weight: normal;
-                                        letter-spacing: @huge-letter-spacing;
+                                        font-size: @font-size-detail-price;
+                                        color: @font-color-detail-price;
+                                        letter-spacing: @font-letter-spacing-detail-price;
                                     }
                                 }
 
@@ -164,9 +174,11 @@ body.is--ctl-detail.is--act-index {
 
                                     span.content--discount {
                                         display: block;
-                                        font-size: 24px;
                                         font-weight: normal;
-                                        color: @color-text-gray;
+                                        font-size: @font-size-detail-pseudo-price;
+                                        color: @font-color-detail-pseudo-price;
+                                        letter-spacing: @font-letter-spacing-detail-pseudo-price;
+
 
                                         span.price--discount-percentage {
                                             display: none;

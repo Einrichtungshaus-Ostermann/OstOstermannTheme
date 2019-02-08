@@ -63,9 +63,7 @@ class Theme extends Components\Theme
      *
      * @var array
      */
-    protected $javascript = [
-        'src/js/jquery.ost-emotion.js'
-    ];
+    protected $javascript = [];
 
     /**
      * {@inheritdoc}

@@ -11,31 +11,126 @@
 
 body {
 
-    // every box (no matter the layout)
+    // every product box (no matter the layout, including emotion)
+    // we only set typography stuff like color, font size etc
     .product--box {
 
+        // the inner container
         .box--content {
             background: #ffffff;
             border: none;
-        }
 
+            // inner container with image, name, price etc
+            .product--info {
+
+                // only one for the name and specific typography
+                a.product--title {
+                    height: 20px;
+                    font-weight: normal;
+                    color: @color-text-light-gray;
+                }
+
+                // remove unit price and set default height
+                .product--price-info {
+                    height: @font-size-listing-price;
+                    text-align: right;
+
+                    // remove unit price
+                    .price--unit {
+                        display: none;
+                    }
+
+                    // the price itself
+                    .product--price {
+                        height: @font-size-listing-price;
+
+                        // default price
+                        .price--default {
+                            font-weight: normal;
+                            font-size: @font-size-listing-price;
+                            letter-spacing: @font-letter-spacing-listing-price;
+                            line-height: @font-size-listing-price;
+                            color: @color-text-light-gray;
+
+                            // discount price
+                            &.is--discount {
+                                color: @color-text-red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
 
 
 
+
+// specific for desktop viewport
 @media screen and(min-width: @desktopViewportWidth) {
 
-
+    // everywhere
     body {
 
-        .product--box {
 
+
+        // we need special padding and width for 4-column listing
+        .product--box.box--basic {
             padding: 10px 0 0 10px;
-
-
+            width: 25%;
         }
+
+
+        // box basic in default 4-column listing
+        // and 1-column (in desktop xl viewport) product box in 5-column emotion
+        .product--box.box--basic,
+        section.emotion--container.emotion--column-5 .col-xl-1 .product--box.box--emotion {
+
+            // compensate outer padding
+            .box--content {
+                padding: 0;
+
+                // inner container with image, name, price etc
+                .product--info {
+                    padding: 0;
+
+                    // the image link container
+                    // reset position and set specific height of the image to get 4:3 aspect ratio
+                    a.product--image {
+                        display: block;
+                        width: 100%;
+                        height: 168px;
+                        position: relative;
+                    }
+
+                    // only one for the name and specific typography
+                    a.product--title {
+                        margin: 5px 0 5px 0;
+                        padding: 0 8px;
+                    }
+
+                    // remove description
+                    .product--description {
+                        display: none;
+                    }
+
+                    // remove actions
+                    .product--actions {
+                        display: none;
+                    }
+
+                    // remove unit price and set default height
+                    .product--price-info {
+                        padding: 0 8px 0 8px;
+                        margin-bottom: 3px;
+                    }
+                }
+            }
+        }
+
+
     }
 
 }

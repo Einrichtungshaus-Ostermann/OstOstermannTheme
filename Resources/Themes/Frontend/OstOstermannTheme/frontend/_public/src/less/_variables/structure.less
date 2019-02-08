@@ -1,0 +1,69 @@
+/**
+ * Einrichtungshaus Ostermann GmbH & Co. KG - Ostermann Theme
+ *
+ * @package   OstOstermannTheme
+ *
+ * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
+ * @copyright 2018 Einrichtungshaus Ostermann GmbH & Co. KG
+ * @license   proprietary
+ */
+
+
+
+
+// width of every column for 5 column layout.
+// these are only the width in percentage of the actual container without left or right margin.
+@width-5-column-layout-1-col: ~"calc( ( ( 100% - 40px ) / 5 * 1 ) + 0px )";
+@width-5-column-layout-2-col: ~"calc( ( ( 100% - 40px ) / 5 * 2 ) + 10px )";
+@width-5-column-layout-3-col: ~"calc( ( ( 100% - 40px ) / 5 * 3 ) + 20px )";
+@width-5-column-layout-4-col: ~"calc( ( ( 100% - 40px ) / 5 * 4 ) + 30px )";
+@width-5-column-layout-5-col: ~"100%";
+
+// same including margin which may be used for positioning
+@width-5-column-layout-1-col-incl-margin: ~"calc( ( ( 100% - 40px ) / 5 * 1 ) + 10px )";
+@width-5-column-layout-2-col-incl-margin: ~"calc( ( ( 100% - 40px ) / 5 * 2 ) + 20px )";
+@width-5-column-layout-3-col-incl-margin: ~"calc( ( ( 100% - 40px ) / 5 * 3 ) + 30px )";
+@width-5-column-layout-4-col-incl-margin: ~"calc( ( ( 100% - 40px ) / 5 * 4 ) + 40px )";
+@width-5-column-layout-5-col-incl-margin: ~"100%";
+
+
+
+
+
+
+// we make the complete site for 5 columns to align with emotion columns and footer column.
+// this also results in product boxes with exactly the same width and height as in an emtion.
+// we can just delete this to revert everything.
+// but be careful: everything within the content may shift - for example: the width of the
+// product boxes within the listing. this will also result in a faulty aspect ratio of every
+// image (from 4:3 to 4:3.10927 something).
+// we set important because this file is loaded before other .less files and we need to
+// overwrite them.
+@media screen and(min-width: @desktopViewportWidth) {
+
+    // every container which has a sidebar
+    .is--ctl-listing aside.sidebar-main + .content--wrapper, .is--ctl-forms aside.sidebar-main + .content--wrapper, .is--ctl-tellafriend aside.sidebar-main + .content--wrapper, .is--ctl-newsletter aside.sidebar-main + .content--wrapper, .is--ctl-sitemap aside.sidebar-main + .content--wrapper, .is--ctl-custom aside.sidebar-main + .content--wrapper, .is--ctl-note.is--user aside.sidebar-main + .content--wrapper, .is--ctl-address aside.sidebar-main + .content--wrapper, .is--ctl-account.is--user aside.sidebar-main + .content--wrapper {
+        margin-left: @width-5-column-layout-1-col-incl-margin !important;
+    }
+
+    // every sidebar in every main content controller
+    .sidebar-main {
+        width: @width-5-column-layout-1-col;
+    }
+
+    // set article details to 5 column layout
+    body.is--ctl-detail.is--act-index {
+        div.product--image-container {
+            width: @width-5-column-layout-3-col !important;
+        }
+        div.product--buybox {
+            width: @width-5-column-layout-2-col !important;
+        }
+    }
+}
+
+
+
+
+
+

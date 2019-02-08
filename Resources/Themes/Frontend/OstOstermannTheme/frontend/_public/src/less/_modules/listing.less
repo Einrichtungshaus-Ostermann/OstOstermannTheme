@@ -13,11 +13,27 @@
 
 
 
+
 @media screen and(min-width: @desktopViewportWidth) {
+
+
+    // replace default percentage margins and paddigns with default 10px borders
+    .listing {
+        margin: -10px 0 0 -10px;
+        padding: 0 0 10px 0;
+    }
 
 
     .listing--content {
         padding-top: 0;
+
+
+    }
+
+
+    // remove topseller from every listing
+    .listing--content div.topseller {
+        display: none;
     }
 
 
@@ -28,6 +44,39 @@
         margin-bottom: 10px;
         border-radius: 0;
     }
+
+
+    .infinite--actions {
+        background: #ffffff;
+        margin-bottom: 10px;
+
+        a.btn {
+            margin: 10px 0;
+        }
+    }
+
+
+    // top paging
+    .listing--actions .listing--paging {
+        border-top: 10px solid @color-background-gray;
+
+        .paging--link {
+            border-radius: 0;
+        }
+    }
+
+    // bottom paging
+    .listing--bottom-paging {
+        background: #ffffff;
+        border-radius: 0;
+        border: 0;
+
+        .panel--paging .paging--link {
+            border-radius: 0;
+        }
+    }
+
+
 
 }
 
