@@ -23,12 +23,26 @@
     {/if}
 
 
+    {if $sInquiry}
+
+
+
+
         {s name="detail-link-article-question" assign="snippetDetailLinkArticleQuestion"}Fragen zum Artikel{/s}
         {s name="detail-link-article-question-short" assign="snippetDetailLinkArticleQuestionShort"}Fragen zum Artikel{/s}
 
 
-        <a href="https://www.google.de" rel="nofollow" title="{$snippetDetailLinkArticleQuestion|escape}" class="action--link link--article-question">
+        <a href="{$sInquiry}" rel="nofollow" title="{$snippetDetailLinkArticleQuestion|escape}" class="action--link link--article-question">
             <i class="icon--phone"></i> {$snippetDetailLinkArticleQuestionShort}
         </a>
+
+
+
+
+    {/if}
+
+
+
+
 
 {/block}
