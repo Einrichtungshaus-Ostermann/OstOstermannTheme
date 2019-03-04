@@ -28,6 +28,14 @@
 
 
 
+// same with 3 columns
+// for desktop viewport in checkout/confirm for billing/shipping address and payment selection
+@width-3-column-layout-1-col: ~"calc( ( ( 100% - 20px ) / 3 * 1 ) + 0px )";
+@width-3-column-layout-2-col: ~"calc( ( ( 100% - 20px ) / 3 * 2 ) + 10px )";
+@width-3-column-layout-3-col: ~"100%";
+
+
+
 
 
 
@@ -58,6 +66,9 @@
         }
         div.product--buybox {
             width: @width-5-column-layout-2-col !important;
+        }
+        div.tab-menu--product {
+            width: @width-5-column-layout-3-col !important;
         }
     }
 }

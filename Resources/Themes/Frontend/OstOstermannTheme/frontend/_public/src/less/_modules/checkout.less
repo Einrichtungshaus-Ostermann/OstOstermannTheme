@@ -109,6 +109,149 @@
         }
 
     }
+
+
+
+
+
+    body.is--ctl-checkout.is--act-shippingpayment {
+
+        div.content.content--confirm {
+
+            margin-top: 10px;
+            margin-bottom: 0;
+
+
+            form#shippingPaymentForm {
+                div.confirm--actions {
+                    background: #ffffff;
+                    margin-top: 0;
+                    padding: 0;
+                    margin-bottom: 10px;
+                }
+            }
+
+
+            div.shipping-payment--information {
+                div.payment--method-list {
+                    border: none;
+                    margin-bottom: 10px;
+                }
+
+                div.dispatch--method-list {
+                    border: none;
+                    margin-bottom: 10px;
+                }
+            }
+
+
+            div.basket--footer {
+                border: none;
+            }
+
+            div.confirm--actions.actions--bottom {
+                background: #ffffff;
+                padding: 0;
+                margin: 0;
+                margin-top: 10px;
+
+                button {
+                    margin: 0;
+                }
+            }
+
+            footer.table--footer {
+                display: none;
+            }
+
+
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+    body.is--ctl-checkout.is--act-confirm {
+
+        div.content.confirm--content {
+
+            margin-top: 10px;
+            padding: 0;
+
+
+            form#confirm--form {
+
+                div.tos--panel {
+                    margin: 0;
+                }
+
+                div.information--panel-wrapper {
+                    margin: 0;
+                    margin-top: 10px;
+
+
+
+
+
+                    // payment has no specific class so we have to set it here and overwrite it later
+                    div.information--panel-item {
+                        margin: 0;
+                        padding: 0;
+                        width: @width-3-column-layout-1-col;
+                    }
+
+                    // both billing and shipping address
+                    div.information--panel-item.information--panel-address {
+                        margin-right: 10px;
+                        width: @width-3-column-layout-2-col;
+                    }
+
+                    // billing address
+                    div.information--panel-item.information--panel-item-billing {
+                        margin-right: 10px;
+                        width: @width-3-column-layout-1-col;
+                    }
+
+                    // shipping address
+                    div.information--panel-item.information--panel-item-shipping {
+                        margin-right: 10px;
+                        width: @width-3-column-layout-1-col;
+                    }
+                }
+
+            }
+
+
+            div.product--table {
+                & > div.panel {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+
+                    div.panel--body {
+                        border: none;
+                    }
+                }
+
+                div.table--actions.actions--bottom {
+                    margin: 0;
+                    padding: 0;
+                    background: #ffffff;
+
+                    div.main--actions {
+                        margin: 0;
+                    }
+                }
+            }
+
+        }
+
+    }
 }
 
 
