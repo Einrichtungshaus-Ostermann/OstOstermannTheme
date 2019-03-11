@@ -17,16 +17,48 @@
 @media screen and(min-width: @desktopViewportWidth) {
 
 
+
+    body.is--ctl-checkout.is--act-confirm {
+        div.confirm--content .product--essential-features {
+            display: none;
+        }
+    }
+
+
+
+
+
+
+
     body.is--ctl-checkout.is--act-cart {
+
+
+
 
         div.content div.product--table {
 
             margin-top: 10px;
 
 
+
+
+
+            // alert outside the panel which is on top of the table--action container
+            // and also every alert within an article (e.g. article assembly notice)
             .alert {
                 margin-bottom: 10px;
             }
+
+            // alert inside the panel and between table--action container and the products
+            div.panel div.panel--body > .alert {
+                margin-top: 10px;
+                margin-bottom: 0;
+                border-bottom: 10px solid #e7eced;
+            }
+
+
+
+
 
 
 
@@ -195,10 +227,6 @@
                     margin: 0;
                     margin-top: 10px;
 
-
-
-
-
                     // payment has no specific class so we have to set it here and overwrite it later
                     div.information--panel-item {
                         margin: 0;
@@ -249,6 +277,77 @@
                 }
             }
 
+
+
+
+            div.ost-stores--pickup-store-selection {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+    body.is--ctl-checkout.is--act-finish {
+
+        div.content.checkout--content.finish--content {
+            padding: 0;
+            margin-top: 10px;
+
+            div.finish--teaser {
+                margin-bottom: 10px;
+            }
+
+
+            div.information--panel-wrapper {
+                margin: 0;
+                margin-top: 10px;
+
+                // payment has no specific class so we have to set it here and overwrite it later
+                div.information--panel-item {
+                    margin: 0;
+                    padding: 0;
+                    width: @width-3-column-layout-1-col;
+                }
+
+                // both billing and shipping address
+                div.information--panel-item.information--panel-address {
+                    margin-right: 10px;
+                    width: @width-3-column-layout-2-col;
+                }
+
+                // billing address
+                div.information--panel-item.information--panel-item-billing {
+                    margin-right: 10px;
+                    width: @width-3-column-layout-1-col;
+                }
+
+                // shipping address
+                div.information--panel-item.information--panel-item-shipping {
+                    margin-right: 10px;
+                    width: @width-3-column-layout-1-col;
+                }
+            }
+
+
+            div.finish--table.product--table {
+                margin-top: 10px;
+
+                & > div.panel {
+                    div.panel--body {
+                        border: none;
+                    }
+                }
+            }
         }
 
     }

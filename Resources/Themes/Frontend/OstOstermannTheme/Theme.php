@@ -70,6 +70,18 @@ class Theme extends Components\Theme
      */
     public function createConfig(Components\Form\Container\TabContainer $container)
     {
+        // ...
+        $this->addAttributes($container);
+        $this->addFooter($container);
+    }
+
+
+
+    /**
+     * {@inheritdoc}
+     */
+    private function addAttributes(Components\Form\Container\TabContainer $container)
+    {
         // create our attribute tab
         $tab = $this->createTab("attribute_tab", "Attribute");
 
@@ -87,6 +99,61 @@ class Theme extends Components\Theme
 
         // add it
         $tab->addElement($fieldset);
+        $container->addTab($tab);
+    }
+
+
+
+
+    /**
+     * {@inheritdoc}
+     */
+    private function addFooter(Components\Form\Container\TabContainer $container)
+    {
+        // create our attribute tab
+        $tab = $this->createTab("footer_tab", "Fußzeile");
+
+        // create fieldset
+        $fieldset = $this->createFieldSet("stores_fieldset", "Filialen");
+        $tab->addElement($fieldset);
+
+        // create fieldset
+        $fieldset = $this->createFieldSet("payment_fieldset", "Zahlungsarten");
+        $tab->addElement($fieldset);
+
+        // create fieldset
+        $fieldset = $this->createFieldSet("shipping_fieldset", "Versandarten");
+        $tab->addElement($fieldset);
+
+        // create fieldset
+        $fieldset = $this->createFieldSet("flags_fieldset", "Flaggen");
+        $tab->addElement($fieldset);
+
+        // create fieldset
+        $fieldset = $this->createFieldSet("shops_fieldset", "Shops");
+        $tab->addElement($fieldset);
+
+        // create fieldset
+        $fieldset = $this->createFieldSet("contact_fieldset", "Kontakt");
+        $tab->addElement($fieldset);
+
+        // create fieldset
+        $fieldset = $this->createFieldSet("security_fieldset", "Sicherheit");
+        $tab->addElement($fieldset);
+
+        // create fieldset
+        $fieldset = $this->createFieldSet("newsletter_fieldset", "Newsletter");
+        $tab->addElement($fieldset);
+
+        // create fieldset
+        $fieldset = $this->createFieldSet("social_fieldset", "Social Media");
+        $tab->addElement($fieldset);
+
+        // create fieldset
+        $fieldset = $this->createFieldSet("seo_fieldset", "SEO");
+        $tab->addElement($fieldset);
+
+        // add tab to container
         $container->addTab($tab);
     }
 }

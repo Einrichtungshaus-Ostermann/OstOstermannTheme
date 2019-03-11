@@ -72,6 +72,12 @@ body.is--ctl-detail.is--act-index {
 
 
 
+                    > div:last-child {
+                        margin-bottom: 0 !important;
+                    }
+
+
+
                     // upper box with images and buy box
                     div.product--detail-upper {
 
@@ -270,6 +276,10 @@ body.is--ctl-detail.is--act-index {
                                         display: block;
                                     }
 
+                                    a.action--link.link--article-question {
+                                        width: 100%;
+                                    }
+
 
                                     i.icon--chat,
                                     i.icon--phone {
@@ -420,6 +430,7 @@ body.is--ctl-detail.is--act-index {
                     // cross selling articles
                     div.tab-menu--cross-selling {
                         background: #ffffff;
+                        margin-bottom: 10px;
 
 
                         div.tab--navigation {
@@ -474,7 +485,24 @@ body.is--ctl-detail.is--act-index {
 
 
 
+// product description content
+body.is--ctl-detail.is--act-index {
 
+    // ...
+    .product--details .content--description {
+        // and always have line-height same as default <p>
+        .product--description {
+            line-height: 1.5rem;
+            font-size: 0.875rem;
+        }
+    }
+
+}
+
+
+
+
+// shipping details content
 body.is--ctl-detail.is--act-index {
 
     // fix padding for shipping-detail container
@@ -507,4 +535,37 @@ body.is--ctl-detail.is--act-index {
 
 
 
+
+
+
+
+// supplier details
+body.is--ctl-detail.is--act-index {
+
+    // fix padding for shipping-detail container
+    @media screen and (min-width: @desktopViewportWidth) {
+        .product--details .content--supplier {
+            padding: 0.625rem 2.8125rem 2.8125rem 2.8125rem;
+        }
+    }
+
+    // fix padding for shipping-detail container
+    .product--details .content--supplier {
+        padding: 0.625rem 0.625rem 0.625rem 0.625rem;
+
+        // and always have line-height same as default <p>
+        .product--description {
+            line-height: 1.5rem;
+            font-size: 0.875rem;
+        }
+    }
+
+    // fix padding for shipping-detail container
+    @media screen and (min-width: @tabletViewportWidth) {
+        .product--details .content--supplier {
+            padding: 1.875rem 1.875rem 1.875rem 1.875rem;
+        }
+
+    }
+}
 
