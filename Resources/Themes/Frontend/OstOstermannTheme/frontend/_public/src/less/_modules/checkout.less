@@ -12,6 +12,23 @@
 
 
 
+// remove shipping costs table when user is logged in
+body.is--ctl-checkout.is--act-cart.is--user {
+    div.content.content--basket {
+        div.product--table {
+            div.basket--footer {
+                div.table--aggregation {
+                    form.table--shipping-costs {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
 
 
 @media screen and(min-width: @desktopViewportWidth) {
@@ -273,6 +290,11 @@
 
                     div.main--actions {
                         margin: 0;
+
+
+                        div.alert {
+                            margin-bottom: 0;
+                        }
                     }
                 }
             }

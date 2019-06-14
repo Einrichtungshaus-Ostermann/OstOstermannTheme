@@ -8,6 +8,11 @@
  * 1.0.0
  * - initial release
  *
+ * @todo frontend/detail/content.tpl logik aus ost-article-assembly-surcharge nutzen und
+ *       einfach das template includen
+ * @todo streichpreis im "ebenfalls angesehen" slider falsch rum
+ *       evtl bei allen slidern!?
+ *
  * @package   OstOstermannTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>

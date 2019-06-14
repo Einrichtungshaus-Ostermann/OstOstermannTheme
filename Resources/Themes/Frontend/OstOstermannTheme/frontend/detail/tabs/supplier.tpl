@@ -14,15 +14,10 @@
 
 {* actual content *}
 <div class="content--supplier">
-
     <div class="content--title">
-        Hersteller
+        {$sArticle.supplierName}
     </div>
-
     <div class="product--description">
-    Bild und Info Hersteller...
-
+        {$sArticle.supplierDescription}
     </div>
-
-
 </div>

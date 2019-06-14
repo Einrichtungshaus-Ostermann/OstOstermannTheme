@@ -12,6 +12,16 @@
 
 
 
+// force special for logout page for both body.is--user and default body
+body.is--ctl-account.is--act-logout {
+    section.content-main.container {
+        div.content--wrapper {
+            margin-left: 0 !important;
+        }
+    }
+}
+
+
 
 @media screen and(min-width: @desktopViewportWidth) {
 
@@ -30,6 +40,37 @@
         }
     }
 
+
+
+    // account logout
+    body.is--ctl-account.is--act-logout {
+
+        div.account--content.content {
+            margin-top: 0;
+
+            h1.panel--title {
+                padding: 20px;
+            }
+
+            div.panel--body {
+                padding: 0 20px;
+                border-bottom: 10px solid #e7eced;
+                padding-bottom: 20px;
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+
+            div.panel--actions {
+                text-align: right;
+
+                a {
+                    margin: 0;
+                }
+            }
+        }
+    }
 
 
     // account index

@@ -19,6 +19,21 @@ body nav.navigation-main {
 
 
         ul.navigation--list li.navigation--entry {
+
+
+
+            // uppercase for every element
+            a.navigation--link span {
+                text-transform: uppercase;
+            }
+
+            // remove "home"
+            a.navigation--link.is--first {
+                display: none;
+            }
+
+
+
             a.navigation--link.active, a.navigation--link.is--active {
                 background: none;
                 color: inherit;

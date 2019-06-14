@@ -103,7 +103,6 @@
                     <a href="google.de"><img src="{link file='frontend/_public/src/img/footer-icons/security-ssl.jpg'}" alt="..." title="..."></a>
                     <a href="google.de"><img src="{link file='frontend/_public/src/img/footer-icons/security-top-shop.jpg'}" alt="..." title="..."></a>
                     <a href="google.de"><img src="{link file='frontend/_public/src/img/footer-icons/security-trusted-shop.jpg'}" alt="..." title="..."></a>
-
                 </div>
             </div>
         </div>

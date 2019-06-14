@@ -14,18 +14,10 @@
 
 {* actual content *}
 <div class="content--shipping-details">
-
     <div class="content--title">
-        Informationen zum Versand
+        {s name="header-title"}Informationen zum Versand{/s}
     </div>
-
     <div class="product--description">
-    Lieferung per Paket
-    Ihre Bestellung versenden wir mit dem Paketdienst DHL. Sobald die Ware unser Lager verlassen hat, erhalten Sie eine E-Mail mit Ihrer Sendungsverfolgung.
-
-    Die Versandkosten belaufen sich auf 4,50 € innerhalb von Deutschland.
-
+        Weitere Infos und sovido Video...
     </div>
-
-
 </div>

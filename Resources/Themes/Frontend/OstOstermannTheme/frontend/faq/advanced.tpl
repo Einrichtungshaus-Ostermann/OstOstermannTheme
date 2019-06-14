@@ -60,7 +60,7 @@
 {* add home-page without and selected category *}
 {block name='frontend_index_content_faq_list'}
 
-    {if $faq.category_selected_id|intval == 0}
+    {if $faq.category_selected_id|intval == 0 && $smarty.post.faq_search_input == ""}
         <div class="faq--home">
             <div class="header">
                 <img src="{link file='frontend/_public/src/img/faq/teaser-online-kunden-center.jpg'}" style="width: 100%;"/>

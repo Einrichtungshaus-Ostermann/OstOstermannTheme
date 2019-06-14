@@ -50,12 +50,25 @@
 @media screen and(min-width: @desktopViewportWidth) {
 
     // every container which has a sidebar
-    .is--ctl-listing aside.sidebar-main + .content--wrapper, .is--ctl-forms aside.sidebar-main + .content--wrapper, .is--ctl-tellafriend aside.sidebar-main + .content--wrapper, .is--ctl-newsletter aside.sidebar-main + .content--wrapper, .is--ctl-sitemap aside.sidebar-main + .content--wrapper, .is--ctl-custom aside.sidebar-main + .content--wrapper, .is--ctl-note.is--user aside.sidebar-main + .content--wrapper, .is--ctl-address aside.sidebar-main + .content--wrapper, .is--ctl-account.is--user aside.sidebar-main + .content--wrapper {
+    .is--ctl-listing aside.sidebar-main + .content--wrapper,
+    .is--ctl-forms aside.sidebar-main + .content--wrapper,
+    .is--ctl-ticket aside.sidebar-main + .content--wrapper,
+    .is--ctl-tellafriend aside.sidebar-main + .content--wrapper,
+    .is--ctl-newsletter aside.sidebar-main + .content--wrapper,
+    .is--ctl-sitemap aside.sidebar-main + .content--wrapper,
+    .is--ctl-custom aside.sidebar-main + .content--wrapper,
+    .is--ctl-note.is--user aside.sidebar-main + .content--wrapper,
+    .is--ctl-address aside.sidebar-main + .content--wrapper,
+    .is--ctl-account.is--user aside.sidebar-main + .content--wrapper {
         margin-left: @width-5-column-layout-1-col-incl-margin !important;
     }
 
     // same with plugins
     .is--ctl-faq aside.sidebar-main + .content--wrapper {
+        margin-left: @width-5-column-layout-1-col-incl-margin !important;
+    }
+
+    .is--ctl-ostorderinfo aside.sidebar-main + .content--wrapper {
         margin-left: @width-5-column-layout-1-col-incl-margin !important;
     }
 
@@ -74,6 +87,9 @@
         }
         div.tab-menu--product {
             width: @width-5-column-layout-3-col !important;
+        }
+        div.ost-cross-selling {
+            width: @width-5-column-layout-2-col !important;
         }
     }
 }

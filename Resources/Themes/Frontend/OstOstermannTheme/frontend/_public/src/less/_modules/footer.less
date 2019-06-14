@@ -23,6 +23,10 @@ body {
 
             .grid--container {
 
+                display: -ms-grid;
+                -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
+                -ms-grid-rows: auto 10px auto 10px auto 10px auto;
+
                 display: grid;
                 grid-template-columns: repeat( 5, 1fr );
                 grid-gap: 10px;
@@ -54,6 +58,70 @@ body {
                     grid-column: span 5;
                 }
 
+                // just for ie11
+                div.grid--service {
+                    -ms-grid-column: 1;
+                    -ms-grid-row: 1;
+                }
+
+                div.grid--stores {
+                    -ms-grid-column: 3;
+                    -ms-grid-row: 1;
+                }
+
+                div.grid--payment-methods {
+                    -ms-grid-column: 5;
+                    -ms-grid-row: 1;
+                }
+
+                div.grid--dispatch-countries {
+                    -ms-grid-column: 7;
+                    -ms-grid-row: 1;
+                }
+
+                div.grid--shops {
+                    -ms-grid-column: 9;
+                    -ms-grid-row: 1;
+                }
+
+                div.grid--content {
+                    -ms-grid-column: 1;
+                    -ms-grid-row: 3;
+                }
+
+                div.grid--contact {
+                    -ms-grid-column: 3;
+                    -ms-grid-row: 3;
+                }
+
+                div.grid--dispach-methods {
+                    -ms-grid-column: 5;
+                    -ms-grid-row: 3;
+                }
+
+                div.grid--security {
+                    -ms-grid-column: 7;
+                    -ms-grid-row: 3;
+                    -ms-grid-column-span: 3;
+                }
+
+                div.grid--newsletter {
+                    -ms-grid-column: 1;
+                    -ms-grid-row: 5;
+                    -ms-grid-column-span: 5;
+                }
+
+                div.grid--social-media {
+                    -ms-grid-column: 7;
+                    -ms-grid-row: 5;
+                    -ms-grid-column-span: 3;
+                }
+
+                div.grid--seo-content {
+                    -ms-grid-column: 1;
+                    -ms-grid-row: 7;
+                    -ms-grid-column-span: 9;
+                }
 
 
 

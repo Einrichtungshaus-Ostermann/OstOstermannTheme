@@ -14,7 +14,9 @@
     <a href="#" class="tab--link" title="Versandinfo" data-tabName="shipping-details">Versand</a>
 
     {* append supplier details *}
-    <a href="#" class="tab--link" title="Hersteller" data-tabName="supplier">Hersteller</a>
+    {if $sArticle.supplierDescription != ""}
+        <a href="#" class="tab--link" title="Hersteller" data-tabName="supplier">Hersteller</a>
+    {/if}
 
 {/block}
 
@@ -32,7 +34,7 @@
             <a href="#" class="tab--title" title="Versandinfo">Versandinfo</a>
         </div>
         <div class="tab--preview">
-            Versandinfo hier...
+            Informationen zum Versand
         </div>
         <div class="tab--content">
             {include file="frontend/detail/tabs/shipping_details.tpl"}
@@ -40,16 +42,18 @@
     </div>
 
     {* tab container for supplier *}
-    <div class="tab--container">
-        <div class="tab--header">
-            <a href="#" class="tab--title" title="Hersteller">Hersteller</a>
+    {if $sArticle.supplierDescription != ""}
+        <div class="tab--container">
+            <div class="tab--header">
+                <a href="#" class="tab--title" title="Hersteller">Hersteller</a>
+            </div>
+            <div class="tab--preview">
+                Informationen zum Hersteller
+            </div>
+            <div class="tab--content">
+                {include file="frontend/detail/tabs/supplier.tpl"}
+            </div>
         </div>
-        <div class="tab--preview">
-            Hersteller hier...
-        </div>
-        <div class="tab--content">
-            {include file="frontend/detail/tabs/supplier.tpl"}
-        </div>
-    </div>
+    {/if}
 
 {/block}

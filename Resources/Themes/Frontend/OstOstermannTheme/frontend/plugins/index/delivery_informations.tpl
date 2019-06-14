@@ -52,10 +52,18 @@
 
             {else}
 
+                {if $deliveryTime|intval == 0}
+                    {s name="detail-data-shipping--no-stock--delivery-time--short--zero-week" assign="deliveryTimeSnippet"}Lieferzeit unbekannt{/s}
+                {elseif $deliveryTime|intval == 1}
+                    {s name="detail-data-shipping--no-stock--delivery-time--short--one-week" assign="deliveryTimeSnippet"}Lieferzeit ca. 1 Woche{/s}
+                {else}
+                    {s name="detail-data-shipping--no-stock--delivery-time--short" assign="deliveryTimeSnippet"}Lieferzeit ca. {$deliveryTime} Wochen{/s}
+                {/if}
+
                 <p class="delivery--information">
                 <span class="delivery--text delivery--yellow">
                     <i class="delivery--status-icon delivery--status-yellow"></i>
-                    {s name="detail-data-shipping--no-stock--delivery-time--short"}Lieferzeit ca. {$deliveryTime} Wochen{/s}
+                    {$deliveryTimeSnippet}
                 </span>
                 </p>
 
