@@ -14,11 +14,7 @@
 
     {* add article assembly here and show it only when full-service-price *}
     {* insert the assembly surcharge file here to get the logic from the plugin *}
-    {if $ostArticleAssemblySurchargeConfiguration.shopStatus == true && $ostArticleAssemblySurcharge.status == true && $ostArticleAssemblySurcharge.surcharge == 0}
-        <div style="position: absolute; top: 90px; left: 0; padding: 11px 16px 11px 16px; color: #fff; font-size: 16px; text-transform: uppercase; background-color: #4eb91b; z-index: 10;">
-            Kostenlose<br>Lieferung &amp; Montage
-        </div>
-    {/if}
+    {include file="frontend/ost-article-assembly-surcharge/full-service-notice.tpl"}
 
     {* add the header here *}
     {include file="frontend/detail/content/header.tpl"}
@@ -37,26 +33,16 @@
     {$smarty.block.parent}
 
 
-
     <div class="ost-cross-selling">
-
-
-
 
         <div class="title">
             Kunden haben sich ebenfalls angesehen
         </div>
 
-
-
         {action module=widgets controller=recommendation action=viewed articleId=$sArticle.articleID}
 
-
-
-
     </div>
-
-
+    
     <div style="clear: both;"></div>
 
 {/block}

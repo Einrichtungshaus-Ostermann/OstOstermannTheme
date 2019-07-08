@@ -14,21 +14,30 @@ body {
 
     footer.footer-main {
 
+
+        .footer-minimal {
+            display: none;
+        }
+
+        .navigation--link {
+            line-height: 1.7;
+            padding: 0;
+        }
+
         border: none;
         background-color: #ffffff;
 
         .container {
-            max-width: 1180px;
             background-color: @color-background-gray;
 
             .grid--container {
 
                 display: -ms-grid;
-                -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
-                -ms-grid-rows: auto 10px auto 10px auto 10px auto;
+                -ms-grid-columns: 1fr 10px 1fr;
+                -ms-grid-rows: auto 10px auto 10px auto 10px auto 10px auto 10px auto 10px auto 10px auto;
 
                 display: grid;
-                grid-template-columns: repeat( 5, 1fr );
+                grid-template-columns: repeat( 2, 1fr );
                 grid-gap: 10px;
                 background-color: @color-background-gray;
                 padding: 10px;
@@ -47,7 +56,7 @@ body {
                 }
 
                 div.grid--newsletter {
-                    grid-column: span 3;
+                    grid-column: span 2;
                 }
 
                 div.grid--social-media {
@@ -55,7 +64,7 @@ body {
                 }
 
                 div.grid--seo-content {
-                    grid-column: span 5;
+                    grid-column: span 2;
                 }
 
                 // just for ie11
@@ -70,57 +79,57 @@ body {
                 }
 
                 div.grid--payment-methods {
-                    -ms-grid-column: 5;
-                    -ms-grid-row: 1;
-                }
-
-                div.grid--dispatch-countries {
-                    -ms-grid-column: 7;
-                    -ms-grid-row: 1;
-                }
-
-                div.grid--shops {
-                    -ms-grid-column: 9;
-                    -ms-grid-row: 1;
-                }
-
-                div.grid--content {
                     -ms-grid-column: 1;
                     -ms-grid-row: 3;
                 }
 
-                div.grid--contact {
+                div.grid--dispatch-countries {
                     -ms-grid-column: 3;
                     -ms-grid-row: 3;
                 }
 
+                div.grid--shops {
+                    -ms-grid-column: 1;
+                    -ms-grid-row: 5;
+                }
+
+                div.grid--content {
+                    -ms-grid-column: 3;
+                    -ms-grid-row: 5;
+                }
+
+                div.grid--contact {
+                    -ms-grid-column: 1;
+                    -ms-grid-row: 7;
+                }
+
                 div.grid--dispach-methods {
-                    -ms-grid-column: 5;
-                    -ms-grid-row: 3;
+                    -ms-grid-column: 3;
+                    -ms-grid-row: 7;
                 }
 
                 div.grid--security {
-                    -ms-grid-column: 7;
-                    -ms-grid-row: 3;
+                    -ms-grid-column: 1;
+                    -ms-grid-row: 9;
                     -ms-grid-column-span: 3;
                 }
 
                 div.grid--newsletter {
                     -ms-grid-column: 1;
-                    -ms-grid-row: 5;
-                    -ms-grid-column-span: 5;
+                    -ms-grid-row: 11;
+                    -ms-grid-column-span: 3;
                 }
 
                 div.grid--social-media {
-                    -ms-grid-column: 7;
-                    -ms-grid-row: 5;
+                    -ms-grid-column: 1;
+                    -ms-grid-row: 13;
                     -ms-grid-column-span: 3;
                 }
 
                 div.grid--seo-content {
                     -ms-grid-column: 1;
-                    -ms-grid-row: 7;
-                    -ms-grid-column-span: 9;
+                    -ms-grid-row: 15;
+                    -ms-grid-column-span: 3;
                 }
 
 
@@ -306,6 +315,188 @@ body {
 
 }
 
+
+
+
+
+
+
+@media screen and(min-width: @tabletViewportWidth) {
+
+
+
+    body {
+
+        footer.footer-main {
+
+
+
+
+
+            .container {
+
+
+                .grid--container {
+
+                    display: -ms-grid;
+                    -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
+                    -ms-grid-rows: auto 10px auto 10px auto 10px auto;
+
+                    display: grid;
+                    grid-template-columns: repeat( 5, 1fr );
+
+
+
+                    // grid specific for every child and custom childs
+                    & > div {
+                        grid-column: span 1;
+                    }
+
+                    div.grid--security {
+                        grid-column: span 2;
+                    }
+
+                    div.grid--newsletter {
+                        grid-column: span 3;
+                    }
+
+                    div.grid--social-media {
+                        grid-column: span 2;
+                    }
+
+                    div.grid--seo-content {
+                        grid-column: span 5;
+                    }
+
+                    // just for ie11
+                    div.grid--service {
+                        -ms-grid-column: 1;
+                        -ms-grid-row: 1;
+                    }
+
+                    div.grid--stores {
+                        -ms-grid-column: 3;
+                        -ms-grid-row: 1;
+                    }
+
+                    div.grid--payment-methods {
+                        -ms-grid-column: 5;
+                        -ms-grid-row: 1;
+                    }
+
+                    div.grid--dispatch-countries {
+                        -ms-grid-column: 7;
+                        -ms-grid-row: 1;
+                    }
+
+                    div.grid--shops {
+                        -ms-grid-column: 9;
+                        -ms-grid-row: 1;
+                    }
+
+                    div.grid--content {
+                        -ms-grid-column: 1;
+                        -ms-grid-row: 3;
+                    }
+
+                    div.grid--contact {
+                        -ms-grid-column: 3;
+                        -ms-grid-row: 3;
+                    }
+
+                    div.grid--dispach-methods {
+                        -ms-grid-column: 5;
+                        -ms-grid-row: 3;
+                    }
+
+                    div.grid--security {
+                        -ms-grid-column: 7;
+                        -ms-grid-row: 3;
+                        -ms-grid-column-span: 3;
+                    }
+
+                    div.grid--newsletter {
+                        -ms-grid-column: 1;
+                        -ms-grid-row: 5;
+                        -ms-grid-column-span: 5;
+                    }
+
+                    div.grid--social-media {
+                        -ms-grid-column: 7;
+                        -ms-grid-row: 5;
+                        -ms-grid-column-span: 3;
+                    }
+
+                    div.grid--seo-content {
+                        -ms-grid-column: 1;
+                        -ms-grid-row: 7;
+                        -ms-grid-column-span: 9;
+                    }
+
+
+
+                }
+
+
+
+
+
+            }
+        }
+
+
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and(min-width: @tabletViewportWidth) {
+    body {
+        footer.footer-main {
+            .container {
+                max-width: none;
+
+                .grid--container div.grid--payment-methods img {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+@media screen and(min-width: @desktopViewportWidth) {
+    body {
+        footer.footer-main {
+            .container {
+                max-width: 1180px;
+
+                .grid--container div.grid--payment-methods img {
+                    width: auto;
+                }
+            }
+        }
+    }
+}
 
 
 

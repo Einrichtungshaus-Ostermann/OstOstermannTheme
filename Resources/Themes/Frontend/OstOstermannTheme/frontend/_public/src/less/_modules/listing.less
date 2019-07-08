@@ -11,10 +11,73 @@
 
 
 
+.listing--content {
+    padding-top: 0;
+    margin-top: 0;
+}
 
 
 
-@media screen and(min-width: @desktopViewportWidth) {
+
+
+.infinite--actions {
+    background: #ffffff;
+    margin-bottom: 10px;
+
+    a.btn {
+        margin: 10px 0;
+    }
+}
+
+
+
+.listing--actions {
+    background: #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    .action--sort {
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+
+@media screen and(min-width: @tabletViewportWidth) {
+
+
+
+
+    .listing--actions {
+        border: none;
+        padding: 10px 0 0 0;
+        border-radius: 0;
+    }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+@media screen and(min-width: @tabletLandscapeViewportWidth) {
+
+
+
+
+    .action--sort .sort--select {
+        margin-bottom: 10px;
+    }
+
+
 
 
     // replace default percentage margins and paddigns with default 10px borders
@@ -24,36 +87,31 @@
     }
 
 
-    .listing--content {
-        padding-top: 0;
 
 
+}
+
+
+
+
+@media screen and(min-width: @desktopViewportWidth) {
+
+
+    .action--sort .sort--select {
+        margin-bottom: 0;
     }
 
 
-    // remove topseller from every listing
-    .listing--content div.topseller {
-        display: none;
-    }
 
 
 
     .listing--actions {
-        border: none;
-        background: #ffffff;
-        margin-bottom: 10px;
-        border-radius: 0;
-    }
 
-
-    .infinite--actions {
-        background: #ffffff;
-        margin-bottom: 10px;
-
-        a.btn {
-            margin: 10px 0;
+        .action--sort {
+            margin-bottom: 10px;
         }
     }
+
 
 
     // top paging
@@ -115,4 +173,18 @@
         }
     }
 
+}
+
+
+
+
+
+
+
+
+
+
+// remove topseller from every listing
+.listing--content div.topseller {
+    display: none;
 }

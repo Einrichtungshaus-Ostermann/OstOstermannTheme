@@ -10,14 +10,7 @@
 
 
 
-
-
-
-
-
-
-
-body.is--ctl-forms.is--act-index {
+body.is--ctl-newsletter {
 
     div.sidebar--categories-wrapper {
         background: #ffffff;
@@ -28,24 +21,18 @@ body.is--ctl-forms.is--act-index {
     }
 
 
-    div.forms--content.content {
+    div.newsletter--content.content {
         margin-top: 0;
+        padding-top: 0;
 
-        // every error within its own container
-        .error {
+        .newsletter--error-messages {
             margin-bottom: 10px;
         }
 
-        // the success message is within the headline and we have to remove the white background
-        // from the outer container
-        div.forms--headline {
-            div.alert.is--success {
-                margin: -20px;
-            }
-        }
-
-        div.forms--headline {
+        div.newsletter--headline {
             margin-bottom: 10px;
+            background: #ffffff;
+            border: none;
 
             div.forms--text {
                 p:last-child {
@@ -54,9 +41,6 @@ body.is--ctl-forms.is--act-index {
             }
         }
 
-        div.success-buttons.buttons {
-            background: #ffffff;
-        }
     }
 
 }

@@ -20,6 +20,13 @@ body {
         background: @color-background-gray;
         box-shadow: none;
         margin-top: 0;
+
+
+        div.content-main--inner {
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+        }
     }
 }
 
@@ -30,19 +37,24 @@ body {
 
 
 
+body {
+    section.content-main {
+        margin-bottom: -10px;
+
+    }
+}
+
+
+
+
+
 
 
 @media screen and(min-width: @desktopViewportWidth) {
     body {
         section.content-main {
             max-width: 1180px;
-            margin-bottom: -10px;
 
-            div.content-main--inner {
-                padding-left: 10px;
-                padding-right: 10px;
-                padding-bottom: 10px;
-            }
         }
     }
 }

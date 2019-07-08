@@ -22,10 +22,7 @@ nav.content--breadcrumb  {
 
 
 @media screen and(min-width: @tabletViewportWidth) {
-    nav.content--breadcrumb  {
-        .unitize-padding(0, 5);
-        border: none;
-    }
+
 }
 
 
@@ -33,11 +30,21 @@ nav.content--breadcrumb  {
 
 
 @media screen and(min-width: @desktopViewportWidth) {
-    nav.content--breadcrumb  {
-        padding: 10px;
 
-        ul.breadcrumb--list {
-            background: #ffffff;
-        }
+}
+
+
+
+
+nav.content--breadcrumb  {
+    .unitize-padding(0, 5);
+    border: none;
+}
+
+nav.content--breadcrumb  {
+    padding: 10px;
+
+    ul.breadcrumb--list {
+        background: #ffffff;
     }
 }

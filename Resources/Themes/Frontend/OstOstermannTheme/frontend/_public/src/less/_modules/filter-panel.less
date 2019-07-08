@@ -11,6 +11,13 @@
 
 body {
 
+    // ...
+    @media screen and (min-width: @tabletViewportWidth) {
+        .filter-panel {
+            width: 32.333333%;
+        }
+    }
+
     // we need 4 filters per row in desktop resolution
     @media screen and (min-width: @tabletLandscapeViewportWidth) {
         .filter-panel {
