@@ -42,14 +42,10 @@
         {action module=widgets controller=recommendation action=viewed articleId=$sArticle.articleID}
 
     </div>
-    
+
     <div style="clear: both;"></div>
 
 {/block}
 
 
 
-{* overwrite the slider for multiple rows *}
-{block name="ost-article-family--slider"}
-    {include file="frontend/_includes/product_slider.tpl" articles=$ostArticleFamilyArticles articlesPerColumn=3}
-{/block}
