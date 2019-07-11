@@ -12,6 +12,8 @@
  *       einfach das template includen
  * @todo streichpreis im "ebenfalls angesehen" slider falsch rum
  *       evtl bei allen slidern!?
+ * 1.0.1
+ * - added missing meta files
  *
  * @package   OstOstermannTheme
  *
