@@ -8,12 +8,11 @@
  * 1.0.0
  * - initial release
  *
- * @todo frontend/detail/content.tpl logik aus ost-article-assembly-surcharge nutzen und
- *       einfach das template includen
- * @todo streichpreis im "ebenfalls angesehen" slider falsch rum
- *       evtl bei allen slidern!?
  * 1.0.1
  * - added missing meta files
+ *
+ * 1.0.2
+ * - fixed margin for product-table in checkout
  *
  * @package   OstOstermannTheme
  *
