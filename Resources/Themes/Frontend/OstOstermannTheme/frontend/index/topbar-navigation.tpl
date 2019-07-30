@@ -4,32 +4,16 @@
 
 
 
-
-
-{* ... *}
+{* replace the topbar *}
 {block name="frontend_index_top_bar_main"}
-
-    <div class="top-bar" style="
-">
-
-        <div class="container block-group" style="
-
-">
-
-
-
-
+    <div class="top-bar">
+        <div class="container block-group">
             <ul class="list--unordered is--checked">
-                <li style=" ">Preisgarantie - Immer den besten Preis - 120 Tage</span></li>
-                <li style="   ">Online-Finanzierung</li>
-                <li style="    ">Click &amp; Collect</li>
-                <li style="    ">Paketversand weltweit</li>
+                <li>{s name="top-bar--price-guarantee"}Preisgarantie - Immer den besten Preis - 120 Tage{/s}</span></li>
+                <li>{s name="top-bar--factoring"}Online-Finanzierung{/s}</li>
+                <li>{s name="top-bar--click-and-collect"}Click &amp; Collect{/s}</li>
+                <li>{s name="top-bar--worldwide-shipping"}Paketversand weltweit{/s}</li>
             </ul>
-
-
-
         </div>
-
     </div>
-
 {/block}
