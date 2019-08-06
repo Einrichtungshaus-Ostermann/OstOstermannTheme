@@ -17,6 +17,9 @@
  * 1.1.0
  * - moved mostly everything to the ostermann / trends parent theme
  *
+ * 1.1.1
+ * - fixed preview.png
+ *
  * @package   OstOstermannTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
