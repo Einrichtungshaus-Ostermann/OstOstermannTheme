@@ -20,6 +20,9 @@
  * 1.1.1
  * - fixed preview.png
  *
+ * 1.1.2
+ * - moved css from child theme to parent theme
+ *
  * @package   OstOstermannTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
