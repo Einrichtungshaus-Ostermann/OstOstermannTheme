@@ -23,6 +23,9 @@
  * 1.1.2
  * - moved css from child theme to parent theme
  *
+ * 1.1.3
+ * - added forced upper-case via css for topbar menu navigation
+ *
  * @package   OstOstermannTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
