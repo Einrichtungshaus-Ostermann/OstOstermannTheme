@@ -26,6 +26,9 @@
  * 1.1.3
  * - added forced upper-case via css for topbar menu navigation
  *
+ * 1.1.4
+ * - changed discount-price color to default ostermann red
+ *
  * @package   OstOstermannTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
