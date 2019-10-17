@@ -29,6 +29,9 @@
  * 1.1.4
  * - changed discount-price color to default ostermann red
  *
+ * 1.1.5
+ * - fixed discount-price color
+ *
  * @package   OstOstermannTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
