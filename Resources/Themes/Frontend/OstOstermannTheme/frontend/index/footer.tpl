@@ -7,11 +7,11 @@
 {* set the stores *}
 {block name='stores--list'}
     <ul>
-        <li>Witten</li>
-        <li>Haan</li>
-        <li>Bottrop</li>
-        <li>Recklinghausen</li>
-        <li>Leverkusen</li>
+        <li><a class="navigation--link" href="https://www.ostermann.de/witten" title="Witten">Witten</a></li>
+        <li><a class="navigation--link" href="https://www.ostermann.de/haan" title="Haan">Haan</a></li>
+        <li><a class="navigation--link" href="https://www.ostermann.de/bottrop" title="Bottrop">Bottrop</a></li>
+        <li><a class="navigation--link" href="https://www.ostermann.de/recklinghausen" title="Recklinghausen">Recklinghausen</a></li>
+        <li><a class="navigation--link" href="https://www.ostermann.de/leverkusen" title="Leverkusen">Leverkusen</a></li>
     </ul>
 {/block}
 

@@ -32,6 +32,9 @@
  * 1.1.5
  * - fixed discount-price color
  *
+ * 1.1.6
+ * - fixed stores in footer
+ *
  * @package   OstOstermannTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
