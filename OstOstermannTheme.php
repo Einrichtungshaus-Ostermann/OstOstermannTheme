@@ -35,6 +35,9 @@
  * 1.1.6
  * - fixed stores in footer
  *
+ * 1.1.7
+ * - fixed footer
+ *
  * @package   OstOstermannTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
