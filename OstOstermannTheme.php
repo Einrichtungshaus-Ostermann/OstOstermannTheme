@@ -38,6 +38,9 @@
  * 1.1.7
  * - fixed footer
  *
+ * 1.1.8
+ * - added conversional javascript snippet
+ *
  * @package   OstOstermannTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
