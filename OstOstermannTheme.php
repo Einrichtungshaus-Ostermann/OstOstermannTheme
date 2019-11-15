@@ -41,6 +41,9 @@
  * 1.1.8
  * - added conversional javascript snippet
  *
+ * 1.1.9
+ * - added css for live-shopping
+ *
  * @package   OstOstermannTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
