@@ -17,23 +17,30 @@
 
 {* security icons *}
 {block name="security--content"}
-    <a href="https://www.trustedshops.de/bewertung/info_XC1DC221A86DE4CE5E95687AEA1329475.html" target="_blank"><img src="{link file='frontend/_public/src/img/trust-icons/footer-trust-icons.jpg'}" alt="..." title="..."></a>
+    <div class="block-group">
+        <a class="block" href="https://www.google.com/shopping/ratings/account/metrics?q=ostermann.de&c=DE&v=4" target="_blank"><img src="{link file='frontend/_public/src/img/trust-icons/footer-trust-icon-google.jpg'}" alt="Google Kundenrezensionen" title="Google Kundenrezensionen"></a>
+        <a class="block" href="https://www.trustedshops.de/bewertung/info_XC1DC221A86DE4CE5E95687AEA1329475.html" target="_blank"><img src="{link file='frontend/_public/src/img/trust-icons/footer-trust-icon-ssl.jpg'}" alt="SSL verschlüsselt" title="SSL verschlüsselt"></a>
+        <a class="block" href="https://de.statista.com/page/top-shops2019" target="_blank"><img src="{link file='frontend/_public/src/img/trust-icons/footer-trust-icon-top-shop.jpg'}" alt="Top Shops 2019" title="Top Shops 2019"></a>
+        <a class="block" href="https://www.trustedshops.de/bewertung/info_XC1DC221A86DE4CE5E95687AEA1329475.html" target="_blank"><img src="{link file='frontend/_public/src/img/trust-icons/footer-trust-icon-trusted-shops.jpg'}" alt="Trusted Shops" title="Trusted Shops"></a>
+    </div>
 {/block}
 
 {* set the shops *}
 {block name='shops--list'}
-    <a href="https://www.trends.de" target="_blank">
-        <img src="{link file='frontend/_public/src/img/shop-icons/footer-trends-logo.jpg'}" alt="Trends online" title="Trends online">
-        <span>trends.de</span>
-    </a>
-    <a href="https://www.trends.de/baby-trends/" target="_blank">
-        <img src="{link file='frontend/_public/src/img/shop-icons/footer-babytrends-logo.jpg'}" alt="Baby-Trends" title="Baby-Trends">
-        <span>baby-trends.de</span>
-    </a>
-    <a href="https://www.ostermann.de/themenwelten/loft-by-ostermann/" target="_blank">
-        <img src="{link file='frontend/_public/src/img/shop-icons/footer-loft-logo.jpg'}" alt="LOFT online" title="LOFT online">
-        <span>loft-online.de</span>
-    </a>
+    <div class="block-group">
+        <a href="https://www.trends.de" target="_blank" class="block">
+            <img src="{link file='frontend/_public/src/img/shop-icons/footer-trends-logo.jpg'}" alt="Trends online" title="Trends online">
+            <span>trends.de</span>
+        </a>
+        <a href="https://www.trends.de/baby-trends/" target="_blank" class="block">
+            <img src="{link file='frontend/_public/src/img/shop-icons/footer-babytrends-logo.jpg'}" alt="Baby-Trends" title="Baby-Trends">
+            <span>baby-trends.de</span>
+        </a>
+        <a href="https://www.ostermann.de/themenwelten/loft-by-ostermann/" target="_blank" class="block">
+            <img src="{link file='frontend/_public/src/img/shop-icons/footer-loft-logo.jpg'}" alt="LOFT online" title="LOFT online">
+            <span>loft-online.de</span>
+        </a>
+    </div>
 {/block}
 
 {* set the contact info *}

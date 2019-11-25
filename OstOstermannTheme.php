@@ -44,6 +44,9 @@
  * 1.1.9
  * - added css for live-shopping
  *
+ * 1.1.10
+ * - fixed footer icons
+ *
  * @package   OstOstermannTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
