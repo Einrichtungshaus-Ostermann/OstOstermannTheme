@@ -47,6 +47,9 @@
  * 1.1.10
  * - fixed footer icons
  *
+ * 1.1.11
+ * - added css for pmsw-cookie-consent-pro plugin
+ *
  * @package   OstOstermannTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
