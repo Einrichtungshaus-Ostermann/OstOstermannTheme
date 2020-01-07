@@ -20,7 +20,7 @@
     <div class="block-group">
         <a class="block" href="https://www.google.com/shopping/ratings/account/metrics?q=ostermann.de&c=DE&v=4" target="_blank"><img src="{link file='frontend/_public/src/img/trust-icons/footer-trust-icon-google.jpg'}" alt="Google Kundenrezensionen" title="Google Kundenrezensionen"></a>
         <a class="block" href="https://www.trustedshops.de/bewertung/info_XC1DC221A86DE4CE5E95687AEA1329475.html" target="_blank"><img src="{link file='frontend/_public/src/img/trust-icons/footer-trust-icon-ssl.jpg'}" alt="SSL verschlüsselt" title="SSL verschlüsselt"></a>
-        <a class="block" href="https://de.statista.com/page/top-shops2019" target="_blank"><img src="{link file='frontend/_public/src/img/trust-icons/footer-trust-icon-top-shop.jpg'}" alt="Top Shops 2019" title="Top Shops 2019"></a>
+        <a class="block" href="https://de.statista.com/page/top-shops2019" target="_blank"><img src="{link file='frontend/_public/src/img/trust-icons/footer-trust-icon-top-shop-2019.jpg'}" alt="Top Shops 2019" title="Top Shops 2019"></a>
         <a class="block" href="https://www.trustedshops.de/bewertung/info_XC1DC221A86DE4CE5E95687AEA1329475.html" target="_blank"><img src="{link file='frontend/_public/src/img/trust-icons/footer-trust-icon-trusted-shops.jpg'}" alt="Trusted Shops" title="Trusted Shops"></a>
     </div>
 {/block}

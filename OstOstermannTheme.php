@@ -50,6 +50,9 @@
  * 1.1.11
  * - added css for pmsw-cookie-consent-pro plugin
  *
+ * 1.1.12
+ * - fixed top-shop logo in footer
+ *
  * @package   OstOstermannTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
