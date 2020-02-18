@@ -53,6 +53,9 @@
  * 1.1.12
  * - fixed top-shop logo in footer
  *
+ * 1.1.13
+ * - changed live-shopping background image
+ *
  * @package   OstOstermannTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
