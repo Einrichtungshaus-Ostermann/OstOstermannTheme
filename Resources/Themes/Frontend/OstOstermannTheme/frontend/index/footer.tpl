@@ -46,8 +46,14 @@
 {* set the contact info *}
 {block name='contact--content'}
     <span>+49 (2302) 985 - 0</span>
-    <span>Mo - Fr 8 - 20 Uhr</span>
+    <span>Mo - Sa 10 - 20 Uhr</span>
+    {*
+    <span>Mo - Fr 8 - 19 Uhr</span>
     <span>Sa 9.30 - 15.30 Uhr</span>
+    *}
+    {*
+    <span>Wir haben vorerst bis zum 19.04.2020 geschlossen.</span>
+    *}
     <span>kontakt@ostermann.de</span>
 {/block}
 
